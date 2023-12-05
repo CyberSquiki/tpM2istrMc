@@ -1,0 +1,35 @@
+p 270.0 365.0 Sortie 0 s
+p 360.0 145.0 Salle1 0 n
+p 445.0 365.0 Salle3 0 s
+t 360.0 365.0 Sortie_grotte n 0 w n {} ne
+t 440.0 190.0 Passage12 ne 0 w n {} ne
+p 505.0 240.0 Salle2 0 n
+p 220.0 235.0 Depart_Visite 5 w
+t 475.0 300.0 Passage23 e 0 w n {} ne
+t 245.0 305.0 Tour_gratuit w 0 w n {} ne
+t 290.0 185.0 Visite nw 0 w n {} ne
+p 675.0 215.0 p7 1 n
+p 530.0 480.0 p8 1 n
+p 365.0 50.0 p6 1 n
+p 30.0 230.0 p5 3 n
+e Sortie_grotte p8 1 n
+e Passage23 p7 1 n
+e p8 Passage23 1 n
+e p7 Passage12 1 n
+e Tour_gratuit p5 1 n
+e Passage12 p6 1 n
+e p6 Visite 1 n
+e p5 Visite 1 n
+e Tour_gratuit Depart_Visite 1 n
+e Sortie Tour_gratuit 1 n
+e Sortie_grotte Sortie 1 n
+e Salle3 Sortie_grotte 1 n
+e Passage23 Salle3 1 n
+e Salle2 Passage23 1 n
+e Passage12 Salle2 1 n
+e Salle1 Passage12 1 n
+e Visite Salle1 1 n
+e Depart_Visite Visite 1 n
+h grotte0_v1
+
+

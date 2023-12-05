@@ -1,0 +1,19 @@
+# Netx-Time Operators
+prefix EX g = <T>g;
+prefix AX g = [T]g;
+# CTL. (All | Some) state along (Every | Some) path
+prefix AF g = min x | g \/ (<T>T /\ [T]x);
+## Inev
+prefix wAF g = min x | g \/ [T]x;
+## "weak inev"
+prefix EF g = min x | g \/ <T>x;
+## Pot
+prefix AG g = max x | g /\ [T]x;
+## All
+prefix EG g = max x | g /\ ([T]F \/ <T>x);
+## Some
+infix f EU g = min x | g \/ (f /\ <T>x);
+infix f AU g = min x | g \/ (f /\ <T>x /\ [T]x);
+# Extras
+op dead = - <T>T; # deadlocks
+op LIVE l = EF (<l>T); # Petri Net liveness
