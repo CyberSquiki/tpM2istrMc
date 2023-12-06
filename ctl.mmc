@@ -17,3 +17,6 @@ infix f AU g = min x | g \/ (f /\ <T>x /\ [T]x);
 # Extras
 op dead = - <T>T; # deadlocks
 op LIVE l = EF (<l>T); # Petri Net liveness
+
+infix f < g  = (f <= g) /\ - (f = g) ; #Operateur <
+infix f > g  = (f >= g) /\ - (f = g) ; #Operateur >
