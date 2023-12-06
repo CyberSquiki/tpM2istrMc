@@ -1,63 +1,63 @@
-p 35.0 160.0 Ville0 1 n
-p 600.0 50.0 CommunT120 0 n
-p 370.0 160.0 AguyageT1 0 n
-p 30.0 650.0 Ville1 1 n
-p 505.0 340.0 Partage 1 w
-p 800.0 400.0 CommunT212 0 n
-p 300.0 520.0 RetourVille1 0 n
-t 875.0 50.0 t8 0 w n
-t 965.0 160.0 t9 0 w n
-t 230.0 650.0 t10 0 w n
-t 480.0 805.0 t12 0 w n
-t 225.0 160.0 t15 0 w n
-t 645.0 160.0 t16 0 w n
-p 805.0 160.0 CommunT102 0 s
-p 1075.0 160.0 Ville2T1 0 n
-p 1065.0 400.0 Ville2T2 0 n
-t 930.0 400.0 t18 0 w n
-t 670.0 400.0 t17 0 w n
-p 435.0 650.0 AguyageT2 0 n
-t 685.0 650.0 t11 0 w n
-p 925.0 650.0 Ville3 0 n
-p 805.0 520.0 CommunT221 0 n
-t 175.0 585.0 t13 0 w n
-t 505.0 50.0 t7 0 w n
-p 335.0 50.0 RetourVille0 0 n
-t 185.0 100.0 t6 0 w n
-t 945.0 520.0 t19 0 w n
-t 505.0 520.0 t14 0 w n
-e t18 0.4114144672 106.0 Partage 0.0 105.0 1 n
-e Ville0 t15 1 n
-e t6 Ville0 1 n
-e t7 RetourVille0 1 n
-e RetourVille0 t6 1 n
-e Ville1 t10 1 n
-e t10 AguyageT2 1 n
-e AguyageT2 t11 1 n
-e t11 Ville3 1 n
-e Ville3 t12 1 n
-e t12 Ville1 1 n
-e RetourVille1 t13 1 n
-e t13 Ville1 1 n
-e CommunT221 t14 1 n
-e t14 RetourVille1 1 n
-e t15 AguyageT1 1 n
-e Ville2T1 t8 1 n
-e t8 CommunT120 1 n
-e CommunT120 t7 1 n
-e Partage t16 1 n
-e AguyageT1 t16 1 n
-e t16 CommunT102 1 n
-e CommunT102 t9 1 n
-e t9 Ville2T1 1 n
-e t9 0.5844539569 140.2925515 Partage 0.02792870999 143.199162 1 n
-e AguyageT2 t17 1 n
-e t17 CommunT212 1 n
-e Partage t17 1 n
-e CommunT212 t18 1 n
-e t18 Ville2T2 1 n
-e t19 CommunT221 1 n
-e Ville2T2 t19 1 n
+p 45.0 160.0 Ville0T1 1 n
+p 610.0 50.0 CommunT120 0 n
+p 380.0 160.0 AguyageT1 0 n
+p 40.0 650.0 Ville1T2 1 n
+p 515.0 340.0 Partage 1 w
+p 810.0 400.0 CommunT212 0 n
+p 310.0 520.0 RetourVille1 0 n
+t 885.0 50.0 depart_ville2_vers0 n 0 w n {} ne
+t 975.0 160.0 arrivee_ville2_par_ville0 s 0 w n {} ne
+t 240.0 650.0 depart_ville1 n 0 w n {} ne
+t 490.0 805.0 depart_ville3 s 0 w n {} ne
+t 235.0 160.0 depart_ville0 s 0 w n {} ne
+t 655.0 160.0 entree_commun02 n 0 w n {} ne
+p 815.0 160.0 CommunT102 0 s
+p 1085.0 160.0 Ville2T1 0 n
+p 1075.0 400.0 Ville2T2 0 n
+t 940.0 400.0 arrivee_ville2_par_ville1 s 0 w n {} ne
+t 680.0 400.0 entree_commun12 n 0 w n {} ne
+p 445.0 650.0 AguillageT2 0 s
+t 695.0 650.0 arrivee_ville3 s 0 w n {} ne
+p 935.0 650.0 Ville3T2 0 n
+p 815.0 520.0 CommunT221 0 n
+t 185.0 585.0 arrivee_ville1 n 0 w n {} ne
+p 345.0 50.0 RetourVille0 0 n
+t 195.0 100.0 arrivee_ville0 n 0 w n {} ne
+t 955.0 520.0 depart_ville2_vers1 s 0 w n {} ne
+t 515.0 520.0 sortie_commun12 n 0 w n {} ne
+t 465.0 50.0 sortie_commun02 s 0 w n {} ne
+e Ville2T2 depart_ville2_vers1 1 n
+e depart_ville2_vers1 CommunT221 1 n
+e arrivee_ville2_par_ville1 Ville2T2 1 n
+e CommunT212 arrivee_ville2_par_ville1 1 n
+e Partage entree_commun12 1 n
+e entree_commun12 CommunT212 1 n
+e AguillageT2 entree_commun12 1 n
+e arrivee_ville2_par_ville0 0.5398331347 137.277092 Partage 0.02792870999 143.199162 1 n
+e arrivee_ville2_par_ville0 Ville2T1 1 n
+e CommunT102 arrivee_ville2_par_ville0 1 n
+e entree_commun02 CommunT102 1 n
+e AguyageT1 entree_commun02 1 n
+e Partage entree_commun02 1 n
+e CommunT120 sortie_commun02 1 n
+e depart_ville2_vers0 CommunT120 1 n
+e Ville2T1 depart_ville2_vers0 1 n
+e depart_ville0 AguyageT1 1 n
+e sortie_commun12 RetourVille1 1 n
+e CommunT221 sortie_commun12 1 n
+e arrivee_ville1 Ville1T2 1 n
+e RetourVille1 arrivee_ville1 1 n
+e depart_ville3 Ville1T2 1 n
+e Ville3T2 depart_ville3 1 n
+e arrivee_ville3 Ville3T2 1 n
+e AguillageT2 arrivee_ville3 1 n
+e depart_ville1 AguillageT2 1 n
+e Ville1T2 depart_ville1 1 n
+e RetourVille0 arrivee_ville0 1 n
+e sortie_commun02 RetourVille0 1 n
+e arrivee_ville0 Ville0T1 1 n
+e Ville0T1 depart_ville0 1 n
+e arrivee_ville2_par_ville1 0.4114144672 106.0 Partage 0.0 105.0 1 n
 h systeme_trains
 
 
